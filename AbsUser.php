@@ -2,5 +2,5 @@
 
 abstract class AbsUser
 {
-    abstract public function increaseRevenue ();
+    abstract public function increaseRevenue ($sum);
 }

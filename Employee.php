@@ -5,8 +5,9 @@ require_once 'AbsUser.php';
 class Employee extends AbsUser
 {
 
-    public function increaseRevenue()
+    public function increaseRevenue($sum)
     {
-        // TODO: Implement increaseRevenue() method.
+        print_r('Only a student can increase a scholarship.<br>');
+        return;
     }
 }

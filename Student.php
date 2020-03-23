@@ -4,15 +4,17 @@ require_once 'AbsUser.php';
 
 class Student extends AbsUser
 {
-    private $grant;
+    public $grant;
 
-    public function __construct()
+    public function __construct($sum = 700)
     {
-        $this->grant = '700';
+        $this->grant = $sum;
+        return;
     }
 
-    public function increaseRevenue()
+    public function increaseRevenue($sum)
     {
-        // TODO: Implement increaseRevenue() method.
+        $this->grant = $this->grant + $sum;
+        return;
     }
 }

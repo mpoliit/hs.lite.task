@@ -117,7 +117,7 @@ function pdo_qery($pdo, $type, $data = null){
         }
         case 'check': {
             try {
-                $pdo = new PDO($dsn, $config[user], $config[pass], $opt);
+                $pdo = new PDO($dsn, $config["user"], $config["pass"], $opt);
                 return $pdo;
             } catch (PDOException $e){
                 header('Location: /edit_config.php');

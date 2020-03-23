@@ -2,7 +2,7 @@
 require_once 'function.php';
 $pdo = pdo_qery('','check');
 
-switch ($_POST[type_submit]){
+switch ($_POST["type_submit"]){
     case 'create': {
         pdo_qery($pdo, 'create');
         break;
@@ -51,10 +51,10 @@ require_once 'html/header.php';
                         foreach ($users_list as $user){
                             ?>
                             <tr>
-                            <th scope="row"><a href="edit_clients.php?id=<?php print_r($user[id]); ?>"><?php print_r($user[id]); ?></a></th>
-                            <td><?php print_r($user[name]); ?></td>
-                            <td><?php print_r($user[surname]); ?></td>
-                            <td><?php print_r($user[email]); ?></td>
+                            <th scope="row"><a href="edit_clients.php?id=<?php print_r($user["id"]); ?>"><?php print_r($user["id"]); ?></a></th>
+                            <td><?php print_r($user["name"]); ?></td>
+                            <td><?php print_r($user["surname"]); ?></td>
+                            <td><?php print_r($user["email"]); ?></td>
                         </tr>
                         <?
                         }
@@ -104,7 +104,7 @@ require_once 'html/header.php';
                             if(!is_null($users_list)){
                                 foreach ($users_list as $user){
                                     ?>
-                                    <option value="<?php print_r($user[id]); ?>"><?php print_r($user[id]); ?></option>
+                                    <option value="<?php print_r($user["id"]); ?>"><?php print_r($user["id"]); ?></option>
                                     <?
                                 }
                             }

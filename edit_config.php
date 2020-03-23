@@ -1,10 +1,10 @@
 <?php
-if(isset($_POST[save_date])){
+if(isset($_POST["save_date"])){
     $array_field = [];
-    $array_field['host'] = $_POST[host];
-    $array_field['db_name'] = $_POST[db_name];
-    $array_field['user'] = $_POST[user];
-    $array_field['pass'] = $_POST[pass];
+    $array_field["host"] = $_POST["host"];
+    $array_field["db_name"] = $_POST["db_name"];
+    $array_field["user"] = $_POST["user"];
+    $array_field["pass"] = $_POST["pass"];
 
     $date = serialize($array_field);
     file_put_contents($_SERVER['DOCUMENT_ROOT'].'/config', $date);

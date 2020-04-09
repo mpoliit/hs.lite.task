@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Helpers;
+namespace Models\Http\Helpers;
 
 
 class ImageHelper

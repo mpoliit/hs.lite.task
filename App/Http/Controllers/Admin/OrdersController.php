@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers\Admin;
+namespace Models\Http\Controllers\Admin;
 
 
 class OrdersController

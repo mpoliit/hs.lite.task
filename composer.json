@@ -1,0 +1,15 @@
+{
+    "name": "maksp/hs.lite.task",
+    "authors": [
+        {
+            "name": "m.poliit",
+            "email": "maks.poliit@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Models\\": "App"
+        }
+    }
+}
